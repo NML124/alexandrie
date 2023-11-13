@@ -14,7 +14,7 @@ class AuthScreen extends StatelessWidget {
             height: MediaQuery.of(context).size.height / 2,
             child: Column(
               children: [
-                Text("Identifiez vous"),
+                Text("Identifiez-vous"),
                 TextField(
                   decoration: InputDecoration(
                       hintText: "Phone",
