@@ -1,3 +1,4 @@
+import 'package:alexandrie/Constants/color_constants.dart';
 import 'package:alexandrie/Screens/auth_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Alexandrie',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: ColorConstants.primaryAppMaterialColor,
         fontFamily: 'Lato',
       ),
       home: AuthScreen(),

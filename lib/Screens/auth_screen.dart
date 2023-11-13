@@ -5,23 +5,28 @@ class AuthScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    final deviceSize = MediaQuery.of(context).size;
+    return Scaffold(
       body: Center(
         child: Card(
-          child: Column(
-            children: [
-              Text("Identifiez-vous"),
-              TextField(
-                decoration: InputDecoration(
-                    hintText: "Phone",
-                    prefixIcon: Icon(Icons.phone),
-                    filled: true,
-                    fillColor: Colors.white70,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(24.0)),
-                    )),
-              )
-            ],
+          color: Colors.amber,
+          child: Container(
+            height: MediaQuery.of(context).size.height / 2,
+            child: Column(
+              children: [
+                Text("Identifiez-vous"),
+                TextField(
+                  decoration: InputDecoration(
+                      hintText: "Phone",
+                      prefixIcon: Icon(Icons.phone),
+                      filled: true,
+                      fillColor: Colors.white70,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(24.0)),
+                      )),
+                )
+              ],
+            ),
           ),
         ),
       ),
